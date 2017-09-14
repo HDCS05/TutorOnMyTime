@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tutor On My Time</title>
+	<link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,700" rel="stylesheet">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+	<script src="https://use.fontawesome.com/c0a3186a39.js"></script>
+    <link rel="stylesheet" type="text/css" href="./assets/css/animate.css">
+
+	<!-- part for the login with firebase -->
+
+	<script src="https://www.gstatic.com/firebasejs/4.3.1/firebase.js"></script>
+	<script>
+	  // Initialize Firebase
+	  var config = {
+	    apiKey: "AIzaSyBvM-AsGPeQjN4V98um55KEhWjmqrBwIkk",
+	    authDomain: "tutorscheduling-d97eb.firebaseapp.com",
+	    databaseURL: "https://tutorscheduling-d97eb.firebaseio.com",
+	    projectId: "tutorscheduling-d97eb",
+	    storageBucket: "tutorscheduling-d97eb.appspot.com",
+	    messagingSenderId: "825607904372"
+	  };
+	  firebase.initializeApp(config);
+	</script>
+	<script src="https://cdn.firebase.com/libs/firebaseui/2.3.0/firebaseui.js"></script>
+	<link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/2.3.0/firebaseui.css" />
+
+	<!-- end of login with firebase -->
+
+</head>
+<body>
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <a class="navbar-brand"><i class="fa fa-users" aria-hidden="true"></i> Tutor On My Time</a>
+    </div>
+  </div>
+</nav>
+  <div class="container">
+	<div>
+		<h4 style="color: #E3E3E3;">Tutor On My Time <small style="color: #BFBFBF">is a tutor scheduling site that allows teachers/tutors to sign up to be a tutor for students virtually. Once the tutor has enlisted the subjects and availability they are now in a library of tutors for students to choose from. All tutors are paid a flat fee of $30 for 60 minutes sessions.</small>
+		</h4>
+	</div>
+	<hr />
+	  <h1 class="text-center my-4 animated infinite pulse" id="choose">Get Better Grades or Become a Tutor!</h1>
+	  <h2 class="text-center" id="iam"> I am a... </h2>
+       <div class="row">
+       	 <div class="col-md-1"></div>
+         <div class="col-md-10" style="text-align: center">
+		   <button type="submit" class="btn btn-default btn-circle btn-xl" id="buttonStudent">
+		   <img id="student" src="./assets/images/student.png"><br />
+		  Student
+	       </button>
+	       <button type="submit" class="btn btn-default btn-circle btn-xl" id="buttonTutor">
+	       <img id=teacher src="./assets/images/teacher.png"><br />
+	      Tutor
+	       </button>
+	      </div>
+         <div class="col-md-1"></div>
+      </div>
+  </div>
+  <br />
+
+<footer class="footer">
+  <div class="container" style=" text-align: center; margin-bottom: 3%; margin-top: 10%;">
+    <span class="text-muted" style="color: #BFBFBF"> &copy; 2017 Hilton C., Andrea B. & Dain L. </span>
+  </div>
+</footer>
+
+</body>
+	
+	<script
+	  src="https://code.jquery.com/jquery-3.2.1.js"
+	  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+	  crossorigin="anonymous"></script>
+	<script type="text/javascript" src="./assets/js/app2.js"></script>
+
+</html>
+
+

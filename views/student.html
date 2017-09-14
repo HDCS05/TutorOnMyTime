@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tutor On My Time</title>
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,700" rel="stylesheet">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <script src="https://use.fontawesome.com/c0a3186a39.js"></script>
+    <link rel="stylesheet" type="text/css" href="./assets/css/animate.css">
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css'>
+  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css'>
+  <link rel="stylesheet" type="text/css" href="./assets/css/form-basic.css">
+
+  <!-- part for the login with firebase -->
+
+  <script src="https://www.gstatic.com/firebasejs/4.3.1/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyBvM-AsGPeQjN4V98um55KEhWjmqrBwIkk",
+      authDomain: "tutorscheduling-d97eb.firebaseapp.com",
+      databaseURL: "https://tutorscheduling-d97eb.firebaseio.com",
+      projectId: "tutorscheduling-d97eb",
+      storageBucket: "tutorscheduling-d97eb.appspot.com",
+      messagingSenderId: "825607904372"
+    };
+    firebase.initializeApp(config);
+  </script>
+  <script src="https://cdn.firebase.com/libs/firebaseui/2.3.0/firebaseui.js"></script>
+  <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/2.3.0/firebaseui.css" />
+
+  <!-- end of login with firebase -->
+
+
+  </head>
+<body>
+<div class="container">
+    <div class="main-content">
+        <form class="form-basic" method="post" action="/student">
+            <div class="form-title-row">
+                <h1 style="color: #E3E3E3">Student Information</h1>
+            </div>
+
+            <div class="form-row">
+          <label style="color: #E3E3E3; font-weight: normal">Name: </label>
+          <div>
+
+            <input name="name" type="text" class="form-control" placeholder="Enter Your Full Name" id="nameToDisplay">
+
+          </div>
+            </div>
+             <div class="form-row">
+          <label style="color: #E3E3E3; font-weight: normal">Email: </label>
+          <div>
+
+            <input name="email" type="text" class="form-control" placeholder="Email" id="emailToDisplay">
+
+          </div>
+            </div>
+            <div class="form-row">
+          <label style="color: #E3E3E3; font-weight: normal">Subject: </label>
+            <select class="form-control" id="subject" name="subject">
+              <option value="" selected="selected">(please select a subject)</option>
+              <option>English</option>
+              <option>History</option>
+              <option>Math</option>
+              <option>Science</option>
+            </select>
+            </div>
+            <div class="form-row">
+          <label style="color: #E3E3E3; font-weight: normal;">Date</label>
+            <select class="form-control" id="days" name="days">
+              <option value="" selected="selected">(please select a day)</option>
+              <option>Sunday</option>
+              <option>Monday</option>
+              <option>Tuesday</option>
+              <option>Wednesday</option>
+              <option>Thursday</option>
+              <option>Friday</option>
+              <option>Saturday</option>
+            </select>
+          </div>
+            <div class="form-row">
+              <label style="color: #E3E3E3; font-weight: normal;"  >Select Time:</label>
+            <div class="input-group date" id="timepicker">
+              <input name="time" class="form-control"/><span class="input-group-addon"><span class="fa fa-clock-o"></span></span>
+            </div>
+        </div>
+            <br />
+            <div class="form-row">
+                <button type="submit">Submit Form</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<footer class="footer">
+  <div class="container" style=" text-align: center; margin-bottom: 3%; margin-top: 5%;">
+    <span class="text-muted" style="color: #BFBFBF"> &copy; 2017 Hilton C., Andrea B. & Dain L. </span>
+  </div>
+</footer>
+
+<script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+
+<script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.14.1/moment.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js'></script>
+<script type="text/javascript" src="./assets/js/app.js"></script>
+<script type="text/javascript" src="./assets/js/app3.js"></script>
+
+</body>
+</html>
